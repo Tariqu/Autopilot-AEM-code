@@ -1,0 +1,4 @@
+AEM integration approach: 
+1. Create a BrightEdgeUtil class which extends WCMUsePojo. For the class add the AutoPilot - Link Equity Manager jar as dependencies. 
+2. Assign three variables headOpen, BodyString, and closeString with the respective methods. 
+3. In the template, add the variables in the respective locations. 

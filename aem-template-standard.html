@@ -1,0 +1,22 @@
+<!doctype html>
+<html>  
+		<head> 
+			<!-- BE IXF: BE IXF: Place getHeadOpen just inside of the head tag --> 
+			<sly data-sly-use.brightEdgeUtil="${'com.domain.site.commons.use.BrightEdgeUtil' @pagePath=currentPage.Path}"/>
+			${brightEdgeUtil.headOpen @context='unsafe'}
+		</head>
+		<body>
+		
+		
+
+			
+			<footer>
+			<!-- BE IXF: The following <div> block needs to be placed in the location where the link block will be displayed
+			BE IXF: For your website, the location is above/below ...-->
+			<div class="be-ix-link-block">
+			${brightEdgeUtil.bodyString @context='unsafe'}
+			${brightEdgeUtil.closeString @context='unsafe'}
+			</div>
+			</footer>
+		</body>
+</html>
