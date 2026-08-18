@@ -38,7 +38,7 @@ public class BrightEdgeUtil {
 
 		IXFConfiguration ixfConfig = new IXFSDKConfiguration();
 		ixfConfig.setProperty(IXFConfiguration.CAPSULE_MODE, IXFConfiguration.REMOTE_PROD_CAPSULE_MODE);
-		ixfConfig.setProperty(IXFConfiguration.ACCOUNT_ID, "f00000000331713");
+		ixfConfig.setProperty(IXFConfiguration.ACCOUNT_ID, "f00000000333784");
 		ixfConfig.setProperty(IXFConfiguration.API_ENDPOINT, "https://ixfd1-api.bc0a.com/");
 
 		// BE IXF: Update CHARSET if needed
@@ -60,6 +60,10 @@ public class BrightEdgeUtil {
 		// ixfConfig.setProperty(IXFConfiguration.PROXY_HOST, hostname);
 		// ixfConfig.setProperty(IXFConfiguration.PROXY_PORT, "1234");
 		// ixfConfig.setProperty(IXFConfiguration.PROXY_PROTOCOL, "https");
+		// ixfConfig.setProperty(IXFConfiguration.CONNECT_TIMEOUT, 2000);
+		// ixfConfig.setProperty(IXFConfiguration.SOCKET_TIMEOUT, 2000);
+ 
+ 
 
 		IXFSDKParameters parameters = new IXFSDKParameters(request);
 		IXFSDKClient client = new IXFSDKClient(ixfConfig, response, parameters);
